@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\webAPIFoad2025.props" />
+</Project>

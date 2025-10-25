@@ -1,0 +1,6 @@
+@webAPIFoad2025_HostAddress = http://localhost:5291
+
+GET {{webAPIFoad2025_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

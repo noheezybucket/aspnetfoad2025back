@@ -1,0 +1,304 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "WebApIFaod2025",
+    "version": "1.0"
+  },
+  "paths": {
+    "/api/UsersColis": {
+      "get": {
+        "tags": [
+          "UsersColis"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "UsersColis"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UsersColis/{id}": {
+      "get": {
+        "tags": [
+          "UsersColis"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "UsersColis"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "UsersColis"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/WeatherForecast": {
+      "get": {
+        "tags": [
+          "WeatherForecast"
+        ],
+        "operationId": "GetWeatherForecast",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "text/plain": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              },
+              "text/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/WeatherForecast"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "CreateRequest": {
+        "required": [
+          "adress",
+          "cni",
+          "email",
+          "nom",
+          "prénoom",
+          "statut",
+          "telephone"
+        ],
+        "type": "object",
+        "properties": {
+          "nom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "prénoom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cni": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "telephone": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "adress": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "statut": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateRequest": {
+        "required": [
+          "adress",
+          "cni",
+          "email",
+          "nom",
+          "prénoom",
+          "statut",
+          "telephone"
+        ],
+        "type": "object",
+        "properties": {
+          "idUsersColis": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "prénoom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cni": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "telephone": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "adress": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "statut": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "WeatherForecast": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "format": "date"
+          },
+          "temperatureC": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "temperatureF": {
+            "type": "integer",
+            "format": "int32",
+            "readOnly": true
+          },
+          "summary": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  }
+}

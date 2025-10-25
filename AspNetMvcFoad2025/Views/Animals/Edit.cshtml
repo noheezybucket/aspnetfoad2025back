@@ -1,0 +1,70 @@
+﻿@model AspNetMvcFoad2025.Models.Animal
+
+@{
+    ViewBag.Title = "Modifier un animal";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+            <h3 class="mb-0">Modifier les informations de l'animal</h3>
+        </div>
+        <div class="card-body">
+
+            @using (Html.BeginForm())
+            {
+                @Html.AntiForgeryToken()
+
+                @Html.ValidationSummary(true, "", new { @class = "alert alert-danger" })
+                @Html.HiddenFor(model => model.Id)
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.Nom, htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Nom, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Nom, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.Type, htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Type, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Type, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.Sexe, htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Sexe, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Sexe, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.Poids, htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Poids, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Poids, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.Taille, htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.Taille, new { htmlAttributes = new { @class = "form-control" } })
+                    @Html.ValidationMessageFor(model => model.Taille, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="mb-3">
+                    @Html.LabelFor(model => model.DateNaissance, htmlAttributes: new { @class = "form-label" })
+                    @Html.EditorFor(model => model.DateNaissance, new { htmlAttributes = new { @class = "form-control", type = "date" } })
+                    @Html.ValidationMessageFor(model => model.DateNaissance, "", new { @class = "text-danger" })
+                </div>
+
+                <div class="d-flex justify-content-between">
+                    <input type="submit" value="Enregistrer" class="btn btn-success" />
+                    @Html.ActionLink("Retour à la liste", "Index", null, new { @class = "btn btn-secondary" })
+                </div>
+            }
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

@@ -1,82 +1,26 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\",
+  "WorkspaceRootPath": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\entities\\userscolis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\entities\\userscolis.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\mouhamad ahmad\\onedrive\\bureau\\aspnetfoad2025\\webapifaod2025\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\controllers\\authenticatecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\mouhamad ahmad\\onedrive\\bureau\\aspnetfoad2025\\webapifaod2025\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\mouhamad ahmad\\onedrive\\bureau\\aspnetfoad2025\\webapifaod2025\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\mouhamad ahmad\\onedrive\\bureau\\aspnetfoad2025\\webapifaod2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\controllers\\userscoliscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\controllers\\userscoliscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\services\\userscolisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\services\\userscolisservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\models\\userscolis\\createrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\models\\userscolis\\createrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\models\\userscolis\\updaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\models\\userscolis\\updaterequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\helpers\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\helpers\\automapperprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\helpers\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\helpers\\errorhandlermiddleware.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\helpers\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\helpers\\appexception.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\extension\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\extension\\serviceextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01ECD2F0-F2BE-4A3D-9DB3-A8863AF0E845}|LoggerService\\LoggerService.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\loggerservice\\loggerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{01ECD2F0-F2BE-4A3D-9DB3-A8863AF0E845}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\loggerservice.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01ECD2F0-F2BE-4A3D-9DB3-A8863AF0E845}|LoggerService\\LoggerService.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\loggerservice\\loggermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{01ECD2F0-F2BE-4A3D-9DB3-A8863AF0E845}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\loggermanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{01ECD2F0-F2BE-4A3D-9DB3-A8863AF0E845}|LoggerService\\LoggerService.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\loggerservice\\nlog.config||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{01ECD2F0-F2BE-4A3D-9DB3-A8863AF0E845}|LoggerService\\LoggerService.csproj|solutionrelative:loggerservice\\nlog.config||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\helpers\\bdtracking01context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\helpers\\bdtracking01context.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\entities\\client.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\entities\\livreur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\entities\\livreur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{BAD77009-4E5A-485F-9A13-EC2906054C23}|AspNetMvcFoad2025\\AspNetMvcFoad2025.csproj|C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\aspnetmvcfoad2025\\models\\livreur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{BAD77009-4E5A-485F-9A13-EC2906054C23}|AspNetMvcFoad2025\\AspNetMvcFoad2025.csproj|solutionrelative:aspnetmvcfoad2025\\models\\livreur.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\dell\\source\\repos\\aspnetfoad2025\\webapifaod2025\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|c:\\users\\mouhamad ahmad\\onedrive\\bureau\\aspnetfoad2025\\webapifaod2025\\migrations\\applicationdb\\20251028162729_securitymigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B9AAC1C0-7669-4347-BA2D-072AAE478CE2}|WebApIFaod2025\\WebApIFaod2025.csproj|solutionrelative:webapifaod2025\\migrations\\applicationdb\\20251028162729_securitymigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -86,244 +30,72 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Program.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Program.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Program.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Program.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAUwCYAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T12:39:31.399Z",
-              "IsPinned": true,
+              "Title": "appsettings.Development.json",
+              "DocumentMoniker": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\WebApIFaod2025\\appsettings.Development.json",
+              "RelativeDocumentMoniker": "WebApIFaod2025\\appsettings.Development.json",
+              "ToolTip": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\WebApIFaod2025\\appsettings.Development.json",
+              "RelativeToolTip": "WebApIFaod2025\\appsettings.Development.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-28T16:36:51.325Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "UsersColisService.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Services\\UsersColisService.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Services\\UsersColisService.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Services\\UsersColisService.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Services\\UsersColisService.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwFAAAAAAAAAAAAAAAA==",
+              "Title": "20251028162729_securityMigration.cs",
+              "DocumentMoniker": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\WebApIFaod2025\\Migrations\\ApplicationDb\\20251028162729_securityMigration.cs",
+              "RelativeDocumentMoniker": "WebApIFaod2025\\Migrations\\ApplicationDb\\20251028162729_securityMigration.cs",
+              "ToolTip": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\WebApIFaod2025\\Migrations\\ApplicationDb\\20251028162729_securityMigration.cs",
+              "RelativeToolTip": "WebApIFaod2025\\Migrations\\ApplicationDb\\20251028162729_securityMigration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T15:23:37.958Z",
+              "WhenOpened": "2025-10-28T16:27:30.965Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "UsersColisController.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Controllers\\UsersColisController.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Controllers\\UsersColisController.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Controllers\\UsersColisController.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Controllers\\UsersColisController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADAAAAAJAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\WebApIFaod2025\\Program.cs",
+              "RelativeDocumentMoniker": "WebApIFaod2025\\Program.cs",
+              "ToolTip": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\WebApIFaod2025\\Program.cs",
+              "RelativeToolTip": "WebApIFaod2025\\Program.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAcwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-15T10:33:41.885Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WeatherForecastController.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Controllers\\WeatherForecastController.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Controllers\\WeatherForecastController.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Controllers\\WeatherForecastController.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Controllers\\WeatherForecastController.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T12:45:31.179Z",
+              "WhenOpened": "2025-10-28T15:25:48.326Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UsersColis.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Entities\\UsersColis.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Entities\\UsersColis.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Entities\\UsersColis.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Entities\\UsersColis.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAwAcAAAAGAAAAAAAAAA==",
+              "Title": "AuthenticateController.cs",
+              "DocumentMoniker": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\WebApIFaod2025\\Controllers\\AuthenticateController.cs",
+              "RelativeDocumentMoniker": "WebApIFaod2025\\Controllers\\AuthenticateController.cs",
+              "ToolTip": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\WebApIFaod2025\\Controllers\\AuthenticateController.cs",
+              "RelativeToolTip": "WebApIFaod2025\\Controllers\\AuthenticateController.cs",
+              "ViewState": "AgIAAPgAAAAAAAAAAAAcwAMBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T14:10:11.243Z",
+              "WhenOpened": "2025-10-28T13:36:59.692Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CreateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Models\\UsersColis\\CreateRequest.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Models\\UsersColis\\CreateRequest.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Models\\UsersColis\\CreateRequest.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Models\\UsersColis\\CreateRequest.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAYwAYAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T14:06:49.531Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateRequest.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Models\\UsersColis\\UpdateRequest.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Models\\UsersColis\\UpdateRequest.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Models\\UsersColis\\UpdateRequest.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Models\\UsersColis\\UpdateRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T14:07:08.737Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AutoMapperProfile.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Helpers\\AutoMapperProfile.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Helpers\\AutoMapperProfile.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Helpers\\AutoMapperProfile.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Helpers\\AutoMapperProfile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T13:57:28.167Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "ErrorHandlerMiddleware.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Helpers\\ErrorHandlerMiddleware.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Helpers\\ErrorHandlerMiddleware.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Helpers\\ErrorHandlerMiddleware.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Helpers\\ErrorHandlerMiddleware.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T15:16:04.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AppException.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Helpers\\AppException.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Helpers\\AppException.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Helpers\\AppException.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Helpers\\AppException.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA/AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T13:30:11.535Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "ServiceExtension.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Extension\\ServiceExtension.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Extension\\ServiceExtension.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Extension\\ServiceExtension.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Extension\\ServiceExtension.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAAwA8AAAAHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-14T12:07:43.528Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "nlog.config",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\LoggerService\\nlog.config",
-              "RelativeDocumentMoniker": "LoggerService\\nlog.config",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\LoggerService\\nlog.config",
-              "RelativeToolTip": "LoggerService\\nlog.config",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000601|",
-              "WhenOpened": "2025-09-30T15:33:48.915Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "LoggerManager.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\LoggerService\\LoggerManager.cs",
-              "RelativeDocumentMoniker": "LoggerService\\LoggerManager.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\LoggerService\\LoggerManager.cs",
-              "RelativeToolTip": "LoggerService\\LoggerManager.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAIBJwA0AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T15:32:06.085Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "LoggerService.csproj",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\LoggerService\\LoggerService.csproj",
-              "RelativeDocumentMoniker": "LoggerService\\LoggerService.csproj",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\LoggerService\\LoggerService.csproj",
-              "RelativeToolTip": "LoggerService\\LoggerService.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-30T15:33:25.812Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "Client.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Entities\\Client.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Entities\\Client.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Entities\\Client.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Entities\\Client.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T14:35:40.892Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Livreur.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\AspNetMvcFoad2025\\Models\\Livreur.cs",
-              "RelativeDocumentMoniker": "AspNetMvcFoad2025\\Models\\Livreur.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\AspNetMvcFoad2025\\Models\\Livreur.cs",
-              "RelativeToolTip": "AspNetMvcFoad2025\\Models\\Livreur.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABUAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T14:29:01.794Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Livreur.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Entities\\Livreur.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Entities\\Livreur.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Entities\\Livreur.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Entities\\Livreur.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T14:29:49.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "bdTracking01Context.cs",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Helpers\\bdTracking01Context.cs",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\Helpers\\bdTracking01Context.cs",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\Helpers\\bdTracking01Context.cs",
-              "RelativeToolTip": "WebApIFaod2025\\Helpers\\bdTracking01Context.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAQwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T12:22:53.215Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "WebApIFaod2025\\appsettings.Development.json",
-              "ToolTip": "C:\\Users\\dell\\source\\repos\\AspNetFoad2025\\WebApIFaod2025\\appsettings.Development.json",
-              "RelativeToolTip": "WebApIFaod2025\\appsettings.Development.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAAAYAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\WebApIFaod2025\\appsettings.json",
+              "RelativeDocumentMoniker": "WebApIFaod2025\\appsettings.json",
+              "ToolTip": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\WebApIFaod2025\\appsettings.json",
+              "RelativeToolTip": "WebApIFaod2025\\appsettings.json",
+              "ViewState": "AgIAAAQAAAAAAAAAAAAQwAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-30T11:10:37.953Z"
+              "WhenOpened": "2025-10-28T16:36:53.373Z",
+              "EditorCaption": ""
             }
           ]
         }

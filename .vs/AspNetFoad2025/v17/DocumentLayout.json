@@ -42,8 +42,7 @@
               "RelativeToolTip": "WebApIFaod2025\\appsettings.Development.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-28T16:36:51.325Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T16:36:51.325Z"
             },
             {
               "$type": "Document",
@@ -55,8 +54,7 @@
               "RelativeToolTip": "WebApIFaod2025\\Migrations\\ApplicationDb\\20251028162729_securityMigration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T16:27:30.965Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T16:27:30.965Z"
             },
             {
               "$type": "Document",
@@ -68,8 +66,7 @@
               "RelativeToolTip": "WebApIFaod2025\\Program.cs",
               "ViewState": "AgIAAGYAAAAAAAAAAAAcwHEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-10-28T15:25:48.326Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T15:25:48.326Z"
             },
             {
               "$type": "Document",
@@ -79,7 +76,7 @@
               "RelativeDocumentMoniker": "WebApIFaod2025\\Controllers\\AuthenticateController.cs",
               "ToolTip": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\WebApIFaod2025\\Controllers\\AuthenticateController.cs",
               "RelativeToolTip": "WebApIFaod2025\\Controllers\\AuthenticateController.cs",
-              "ViewState": "AgIAAPgAAAAAAAAAAAAcwAMBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAPoAAAAAAAAAAAAAAAMBAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-10-28T13:36:59.692Z",
               "EditorCaption": ""
@@ -94,8 +91,7 @@
               "RelativeToolTip": "WebApIFaod2025\\appsettings.json",
               "ViewState": "AgIAAAQAAAAAAAAAAAAQwAwAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-10-28T16:36:53.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-10-28T16:36:53.373Z"
             }
           ]
         }

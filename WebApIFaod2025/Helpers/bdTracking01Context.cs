@@ -21,8 +21,9 @@ namespace WebApIFaod2025.Helpers
         public DbSet<Colis> Colis { get; set; }
         public DbSet<Livreur> Livreurs { get; set; }
         public DbSet<Client> Clients { get; set; }
-
-
+        public DbSet<SuiviCommande> SuiviCommande { get; set; }
+        public DbSet<DemandeColis> DemandeColis { get;set; }
+        public DbSet<Livraison> Livraisons { get; set; }
 
 
     }

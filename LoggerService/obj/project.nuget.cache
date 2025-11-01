@@ -1,18 +1,18 @@
 {
   "version": 2,
-  "dgSpecHash": "kNowNoDkYn0=",
+  "dgSpecHash": "OfdGJ67tUYk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Mouhamad Ahmad\\OneDrive\\Bureau\\AspNetFoad2025\\LoggerService\\LoggerService.csproj",
+  "projectFilePath": "C:\\Users\\2SG\\Source\\Repos\\aspnetfoad2025back\\LoggerService\\LoggerService.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Mouhamad Ahmad\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Mouhamad Ahmad\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
-    "C:\\Users\\Mouhamad Ahmad\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Mouhamad Ahmad\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
-    "C:\\Users\\Mouhamad Ahmad\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\Mouhamad Ahmad\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
-    "C:\\Users\\Mouhamad Ahmad\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
-    "C:\\Users\\Mouhamad Ahmad\\.nuget\\packages\\nlog\\6.0.4\\nlog.6.0.4.nupkg.sha512",
-    "C:\\Users\\Mouhamad Ahmad\\.nuget\\packages\\nlog.extensions.logging\\6.0.4\\nlog.extensions.logging.6.0.4.nupkg.sha512"
+    "C:\\Users\\2SG\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\2SG\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\8.0.0\\microsoft.extensions.dependencyinjection.8.0.0.nupkg.sha512",
+    "C:\\Users\\2SG\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\2SG\\.nuget\\packages\\microsoft.extensions.logging\\8.0.0\\microsoft.extensions.logging.8.0.0.nupkg.sha512",
+    "C:\\Users\\2SG\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\2SG\\.nuget\\packages\\microsoft.extensions.options\\8.0.0\\microsoft.extensions.options.8.0.0.nupkg.sha512",
+    "C:\\Users\\2SG\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
+    "C:\\Users\\2SG\\.nuget\\packages\\nlog\\6.0.4\\nlog.6.0.4.nupkg.sha512",
+    "C:\\Users\\2SG\\.nuget\\packages\\nlog.extensions.logging\\6.0.4\\nlog.extensions.logging.6.0.4.nupkg.sha512"
   ],
   "logs": []
 }

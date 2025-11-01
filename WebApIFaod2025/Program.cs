@@ -12,6 +12,8 @@ using System.Text;
 using Microsoft.AspNetCore.Identity;
 using WebApIFaod2025.Entities;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.OpenApi.Models;
+
 
 
 
@@ -37,7 +39,15 @@ builder.Services.AddDbContext<ApplicationDbContext>(options => options.UseNpgsql
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>() 
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
+builder.Services.AddScoped<IUsersColisService, UsersColisService>();
+builder.Services.AddScoped<IClientService, ClientService>();
+builder.Services.AddScoped<ILivreurService, LivreurService>();
+builder.Services.AddScoped<IColisService, ColisService>();
+builder.Services.AddScoped<IDemandeColisService, DemandeColisService>();
+builder.Services.AddScoped<ISuiviCommandeService, SuiviCommandeService>();
+builder.Services.AddScoped<IListeColisService, ListeColisService>();
 
+builder.Services.AddScoped<ILivraisonService, LivraisonService>();
 
 // Adding Authentication
 builder.Services.AddAuthentication(options =>
@@ -73,7 +83,37 @@ options.TokenValidationParameters = new TokenValidationParameters(){
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
+// === DANS builder.Services ===
+builder.Services.AddSwaggerGen(c =>
+{
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "API Colis", Version = "v1" });
+
+    // AJOUTE ÇA POUR JWT
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        Description = "JWT Authorization header using the Bearer scheme. Example: 'Bearer {token}'",
+        Name = "Authorization",
+        In = ParameterLocation.Header,
+        Type = SecuritySchemeType.Http,
+        Scheme = "bearer",
+        BearerFormat = "JWT"
+    });
+
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            new string[] {}
+        }
+    });
+});
 //builder.Services.ConfigureLoggerService();
 
 
@@ -94,7 +134,16 @@ else
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c =>
+    {
+        c.SwaggerEndpoint("/swagger/v1/swagger.json", "API Colis v1");
+        c.RoutePrefix = "swagger";
+
+        // AJOUTE ÇA POUR LE BOUTON AUTHORIZE
+        c.OAuthClientId("swagger");
+        c.OAuthUsePkce();
+    });
+
 }
 
 app.UseHttpsRedirection();
@@ -105,8 +154,9 @@ app.UseForwardedHeaders(new ForwardedHeadersOptions
 });
 app.UseCors("CorsPolicy");
 
+app.UseAuthentication();  // <-- IMPORTANT
+app.UseAuthorization();   // <-- IMPORTANT
 
-app.UseAuthorization();
 
 app.MapControllers();
 

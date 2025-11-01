@@ -90,9 +90,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApIFaod2025.Controllers.UsersColisController",
+    "ContainingType": "WebApIFaod2025.Controllers.ClientController",
     "Method": "GetAll",
-    "RelativePath": "api/UsersColis",
+    "RelativePath": "api/Client",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -100,25 +100,25 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApIFaod2025.Controllers.UsersColisController",
+    "ContainingType": "WebApIFaod2025.Controllers.ClientController",
     "Method": "Create",
-    "RelativePath": "api/UsersColis",
+    "RelativePath": "api/Client",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
         "Name": "model",
-        "Type": "WebApIFaod2025.Models.UsersColis.CreateRequest",
+        "Type": "WebApIFaod2025.Models.Client.CreateClientRequest",
         "IsRequired": true
       }
     ],
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebApIFaod2025.Controllers.UsersColisController",
+    "ContainingType": "WebApIFaod2025.Controllers.ClientController",
     "Method": "GetById",
-    "RelativePath": "api/UsersColis/{id}",
+    "RelativePath": "api/Client/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -129,6 +129,374 @@
         "IsRequired": true
       }
     ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.ClientController",
+    "Method": "Update",
+    "RelativePath": "api/Client/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "WebApIFaod2025.Models.Client.UpdateClientRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.ClientController",
+    "Method": "Delete",
+    "RelativePath": "api/Client/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColisController",
+    "Method": "Create",
+    "RelativePath": "api/Colis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApIFaod2025.Models.Colis.CreateColisRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ColisController",
+    "Method": "GetAll",
+    "RelativePath": "api/Colis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.DemandeColisController",
+    "Method": "GetAll",
+    "RelativePath": "api/DemandeColis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.DemandeColisController",
+    "Method": "Create",
+    "RelativePath": "api/DemandeColis",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApIFaod2025.Models.DemandeColis.CreateDemandeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.DemandeColisController",
+    "Method": "GetById",
+    "RelativePath": "api/DemandeColis/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.DemandeColisController",
+    "Method": "Update",
+    "RelativePath": "api/DemandeColis/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "WebApIFaod2025.Models.DemandeColis.UpdateDemandeRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.DemandeColisController",
+    "Method": "Delete",
+    "RelativePath": "api/DemandeColis/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.ListeColisController",
+    "Method": "GetListe",
+    "RelativePath": "api/ListeColis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "livreurId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.LivraisonController",
+    "Method": "Create",
+    "RelativePath": "api/Livraison",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApIFaod2025.Models.Livraison.CreateLivraisonRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.LivraisonController",
+    "Method": "GetAll",
+    "RelativePath": "api/Livraison",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.LivraisonController",
+    "Method": "Terminer",
+    "RelativePath": "api/Livraison/{id}/terminer",
+    "HttpMethod": "PATCH",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.LivreurController",
+    "Method": "GetAll",
+    "RelativePath": "api/Livreur",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.LivreurController",
+    "Method": "Create",
+    "RelativePath": "api/Livreur",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApIFaod2025.Models.Livreur.CreateLivreurRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.LivreurController",
+    "Method": "GetById",
+    "RelativePath": "api/Livreur/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.LivreurController",
+    "Method": "Update",
+    "RelativePath": "api/Livreur/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "WebApIFaod2025.Models.Livreur.UpdateLivreurRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.LivreurController",
+    "Method": "Delete",
+    "RelativePath": "api/Livreur/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.SuiviCommandeController",
+    "Method": "GetAll",
+    "RelativePath": "api/SuiviCommande",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.SuiviCommandeController",
+    "Method": "Create",
+    "RelativePath": "api/SuiviCommande",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApIFaod2025.Models.SuiviCommande.CreateSuiviRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.SuiviCommandeController",
+    "Method": "GetById",
+    "RelativePath": "api/SuiviCommande/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.SuiviCommandeController",
+    "Method": "Update",
+    "RelativePath": "api/SuiviCommande/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "WebApIFaod2025.Models.SuiviCommande.UpdateSuiviRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.SuiviCommandeController",
+    "Method": "Delete",
+    "RelativePath": "api/SuiviCommande/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.UsersColisController",
+    "Method": "GetAll",
+    "RelativePath": "api/UsersColis",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
     "ReturnTypes": []
   },
   {
@@ -163,6 +531,38 @@
       {
         "Name": "id",
         "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.UsersColisController",
+    "Method": "CreateClient",
+    "RelativePath": "api/UsersColis/client",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApIFaod2025.Models.UsersColis.CreateRequest",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebApIFaod2025.Controllers.UsersColisController",
+    "Method": "CreateLivreur",
+    "RelativePath": "api/UsersColis/livreur",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebApIFaod2025.Models.UsersColis.CreateRequest",
         "IsRequired": true
       }
     ],

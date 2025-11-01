@@ -1,8 +1,8 @@
 {
   "openapi": "3.0.1",
   "info": {
-    "title": "WebApIFaod2025",
-    "version": "1.0"
+    "title": "API Colis",
+    "version": "v1"
   },
   "paths": {
     "/api/Authenticate/login": {
@@ -163,6 +163,633 @@
         }
       }
     },
+    "/api/Client": {
+      "get": {
+        "tags": [
+          "Client"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Client"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateClientRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateClientRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateClientRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Client/{id}": {
+      "get": {
+        "tags": [
+          "Client"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Client"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateClientRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateClientRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateClientRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Client"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Colis": {
+      "post": {
+        "tags": [
+          "Colis"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateColisRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateColisRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateColisRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Colis"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DemandeColis": {
+      "get": {
+        "tags": [
+          "DemandeColis"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "DemandeColis"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDemandeRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDemandeRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateDemandeRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/DemandeColis/{id}": {
+      "get": {
+        "tags": [
+          "DemandeColis"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "DemandeColis"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDemandeRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDemandeRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateDemandeRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "DemandeColis"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/ListeColis": {
+      "get": {
+        "tags": [
+          "ListeColis"
+        ],
+        "parameters": [
+          {
+            "name": "livreurId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Livraison": {
+      "post": {
+        "tags": [
+          "Livraison"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLivraisonRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLivraisonRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLivraisonRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "get": {
+        "tags": [
+          "Livraison"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Livraison/{id}/terminer": {
+      "patch": {
+        "tags": [
+          "Livraison"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Livreur": {
+      "get": {
+        "tags": [
+          "Livreur"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Livreur"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLivreurRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLivreurRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateLivreurRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Livreur/{id}": {
+      "get": {
+        "tags": [
+          "Livreur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "Livreur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLivreurRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLivreurRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateLivreurRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Livreur"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SuiviCommande": {
+      "get": {
+        "tags": [
+          "SuiviCommande"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "SuiviCommande"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSuiviRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSuiviRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateSuiviRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/SuiviCommande/{id}": {
+      "get": {
+        "tags": [
+          "SuiviCommande"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "SuiviCommande"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSuiviRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSuiviRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/UpdateSuiviRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "SuiviCommande"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/UsersColis": {
       "get": {
         "tags": [
@@ -173,7 +800,40 @@
             "description": "OK"
           }
         }
-      },
+      }
+    },
+    "/api/UsersColis/client": {
+      "post": {
+        "tags": [
+          "UsersColis"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateRequest"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateRequest"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/CreateRequest"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/UsersColis/livreur": {
       "post": {
         "tags": [
           "UsersColis"
@@ -205,27 +865,6 @@
       }
     },
     "/api/UsersColis/{id}": {
-      "get": {
-        "tags": [
-          "UsersColis"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
       "put": {
         "tags": [
           "UsersColis"
@@ -330,24 +969,30 @@
   },
   "components": {
     "schemas": {
-      "CreateRequest": {
+      "CreateClientRequest": {
         "required": [
-          "adress",
+          "adresse",
           "cni",
+          "codeClient",
           "email",
           "nom",
-          "prénoom",
+          "prenom",
           "statut",
           "telephone"
         ],
         "type": "object",
         "properties": {
+          "codeClient": {
+            "maxLength": 160,
+            "minLength": 1,
+            "type": "string"
+          },
           "nom": {
             "maxLength": 80,
             "minLength": 1,
             "type": "string"
           },
-          "prénoom": {
+          "prenom": {
             "maxLength": 80,
             "minLength": 1,
             "type": "string"
@@ -367,7 +1012,7 @@
             "minLength": 1,
             "type": "string"
           },
-          "adress": {
+          "adresse": {
             "maxLength": 150,
             "minLength": 1,
             "type": "string"
@@ -376,6 +1021,250 @@
             "maxLength": 80,
             "minLength": 1,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateColisRequest": {
+        "required": [
+          "adresseArrivee",
+          "adresseDepart",
+          "description",
+          "idClient",
+          "poids"
+        ],
+        "type": "object",
+        "properties": {
+          "idClient": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "description": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "poids": {
+            "type": "number",
+            "format": "double"
+          },
+          "adresseDepart": {
+            "minLength": 1,
+            "type": "string"
+          },
+          "adresseArrivee": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateDemandeRequest": {
+        "required": [
+          "adresseEnlevement",
+          "adresseLivraison",
+          "clientId",
+          "poidsEstime",
+          "typeColis"
+        ],
+        "type": "object",
+        "properties": {
+          "clientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "adresseEnlevement": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "adresseLivraison": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "poidsEstime": {
+            "type": "number",
+            "format": "float"
+          },
+          "typeColis": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateLivraisonRequest": {
+        "required": [
+          "idClient",
+          "idColis",
+          "idLivreur"
+        ],
+        "type": "object",
+        "properties": {
+          "idColis": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idClient": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "idLivreur": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateLivreurRequest": {
+        "required": [
+          "adresse",
+          "carteGris",
+          "cni",
+          "email",
+          "matricule",
+          "nom",
+          "permis",
+          "prenom",
+          "statut",
+          "telephone"
+        ],
+        "type": "object",
+        "properties": {
+          "matricule": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "carteGris": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "permis": {
+            "maxLength": 25,
+            "minLength": 1,
+            "type": "string"
+          },
+          "nom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "prenom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cni": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "telephone": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "adresse": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "statut": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateRequest": {
+        "required": [
+          "adresse",
+          "cni",
+          "email",
+          "nom",
+          "prenom",
+          "role",
+          "statut",
+          "telephone"
+        ],
+        "type": "object",
+        "properties": {
+          "nom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "prenom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cni": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "telephone": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "adresse": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "statut": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "role": {
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "CreateSuiviRequest": {
+        "required": [
+          "colisId",
+          "statut"
+        ],
+        "type": "object",
+        "properties": {
+          "colisId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "statut": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "positionGPS": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "commentaire": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -436,13 +1325,13 @@
         },
         "additionalProperties": false
       },
-      "UpdateRequest": {
+      "UpdateClientRequest": {
         "required": [
-          "adress",
+          "adresse",
           "cni",
           "email",
           "nom",
-          "prénoom",
+          "prenom",
           "statut",
           "telephone"
         ],
@@ -452,12 +1341,17 @@
             "type": "integer",
             "format": "int32"
           },
+          "codeClient": {
+            "maxLength": 160,
+            "type": "string",
+            "nullable": true
+          },
           "nom": {
             "maxLength": 80,
             "minLength": 1,
             "type": "string"
           },
-          "prénoom": {
+          "prenom": {
             "maxLength": 80,
             "minLength": 1,
             "type": "string"
@@ -477,7 +1371,7 @@
             "minLength": 1,
             "type": "string"
           },
-          "adress": {
+          "adresse": {
             "maxLength": 150,
             "minLength": 1,
             "type": "string"
@@ -486,6 +1380,204 @@
             "maxLength": 80,
             "minLength": 1,
             "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateDemandeRequest": {
+        "required": [
+          "adresseEnlevement",
+          "adresseLivraison",
+          "statut",
+          "typeColis"
+        ],
+        "type": "object",
+        "properties": {
+          "idDemande": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "clientId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "adresseEnlevement": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "adresseLivraison": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "poidsEstime": {
+            "type": "number",
+            "format": "float"
+          },
+          "typeColis": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "statut": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateLivreurRequest": {
+        "required": [
+          "adresse",
+          "carteGris",
+          "cni",
+          "email",
+          "matricule",
+          "nom",
+          "permis",
+          "prenom",
+          "statut",
+          "telephone"
+        ],
+        "type": "object",
+        "properties": {
+          "idUsersColis": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "matricule": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "carteGris": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "permis": {
+            "maxLength": 25,
+            "minLength": 1,
+            "type": "string"
+          },
+          "nom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "prenom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cni": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "telephone": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "adresse": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "statut": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateRequest": {
+        "required": [
+          "adresse",
+          "cni",
+          "email",
+          "nom",
+          "prenom",
+          "statut",
+          "telephone"
+        ],
+        "type": "object",
+        "properties": {
+          "idUsersColis": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "nom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "prenom": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "cni": {
+            "maxLength": 20,
+            "minLength": 1,
+            "type": "string"
+          },
+          "telephone": {
+            "maxLength": 15,
+            "minLength": 1,
+            "type": "string"
+          },
+          "email": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "adresse": {
+            "maxLength": 150,
+            "minLength": 1,
+            "type": "string"
+          },
+          "statut": {
+            "maxLength": 80,
+            "minLength": 1,
+            "type": "string"
+          },
+          "role": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "UpdateSuiviRequest": {
+        "required": [
+          "statut"
+        ],
+        "type": "object",
+        "properties": {
+          "statut": {
+            "maxLength": 50,
+            "minLength": 1,
+            "type": "string"
+          },
+          "positionGPS": {
+            "maxLength": 100,
+            "type": "string",
+            "nullable": true
+          },
+          "commentaire": {
+            "maxLength": 500,
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -513,6 +1605,19 @@
         },
         "additionalProperties": false
       }
+    },
+    "securitySchemes": {
+      "Bearer": {
+        "type": "http",
+        "description": "JWT Authorization header using the Bearer scheme. Example: 'Bearer {token}'",
+        "scheme": "bearer",
+        "bearerFormat": "JWT"
+      }
     }
-  }
+  },
+  "security": [
+    {
+      "Bearer": [ ]
+    }
+  ]
 }

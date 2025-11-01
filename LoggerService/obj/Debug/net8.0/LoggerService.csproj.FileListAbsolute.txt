@@ -23,3 +23,16 @@ C:\Users\Mouhamad Ahmad\OneDrive\Bureau\AspNetFoad2025\LoggerService\obj\Debug\n
 C:\Users\Mouhamad Ahmad\OneDrive\Bureau\AspNetFoad2025\LoggerService\obj\Debug\net8.0\refint\LoggerService.dll
 C:\Users\Mouhamad Ahmad\OneDrive\Bureau\AspNetFoad2025\LoggerService\obj\Debug\net8.0\LoggerService.pdb
 C:\Users\Mouhamad Ahmad\OneDrive\Bureau\AspNetFoad2025\LoggerService\obj\Debug\net8.0\ref\LoggerService.dll
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\bin\Debug\net8.0\LoggerService.deps.json
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\bin\Debug\net8.0\LoggerService.dll
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\bin\Debug\net8.0\LoggerService.pdb
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\obj\Debug\net8.0\LoggerService.csproj.AssemblyReference.cache
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\obj\Debug\net8.0\LoggerService.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\obj\Debug\net8.0\LoggerService.AssemblyInfoInputs.cache
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\obj\Debug\net8.0\LoggerService.AssemblyInfo.cs
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\obj\Debug\net8.0\LoggerService.csproj.CoreCompileInputs.cache
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\obj\Debug\net8.0\LoggerService.sourcelink.json
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\obj\Debug\net8.0\LoggerService.dll
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\obj\Debug\net8.0\refint\LoggerService.dll
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\obj\Debug\net8.0\LoggerService.pdb
+C:\Users\2SG\Source\Repos\aspnetfoad2025back\LoggerService\obj\Debug\net8.0\ref\LoggerService.dll

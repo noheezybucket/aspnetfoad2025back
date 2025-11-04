@@ -36,29 +36,14 @@ namespace WebApIFaod2025.Models.UsersColis
 {
     public class UpdateRequest
     {
-        public int IdUsersColis { get; set; }
+        [MaxLength(80)] public string? Nom { get; set; }
+        [MaxLength(80)] public string? Prenom { get; set; }
+        [MaxLength(20)] public string? CNI { get; set; }
+        [MaxLength(15)] public string? Telephone { get; set; }
+        [MaxLength(80)] public string? Email { get; set; }
+        [MaxLength(150)] public string? Adresse { get; set; }
 
-        [MaxLength(80), Required(ErrorMessage = "^*")]
-        public string Nom { get; set; } = null!;
-
-        [MaxLength(80), Required(ErrorMessage = "^*")]
-        public string Prenom { get; set; } = null!;
-
-        [MaxLength(20), Required(ErrorMessage = "^*")]
-        public string CNI { get; set; } = null!;
-
-        [MaxLength(15), Required(ErrorMessage = "^*")]
-        public string Telephone { get; set; } = null!;
-
-        [MaxLength(80), Required(ErrorMessage = "^*")]
-        public string Email { get; set; } = null!;
-
-        [MaxLength(150), Required(ErrorMessage = "^*")]
-        public string Adresse { get; set; } = null!;
-
-        [MaxLength(80), Required(ErrorMessage = "^*")]
-        public string Statut { get; set; } = "Actif";
-
-        public string Role { get; set; } = "Client";
+        [MaxLength(80)] public string? Role { get; set; }
+        [MaxLength(80)] public string? Statut { get; set; }
     }
 }

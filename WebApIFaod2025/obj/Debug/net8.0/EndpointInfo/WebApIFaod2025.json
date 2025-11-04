@@ -163,10 +163,10 @@
         }
       }
     },
-    "/api/Client": {
+    "/api/Colis": {
       "get": {
         "tags": [
-          "Client"
+          "Colis"
         ],
         "responses": {
           "200": {
@@ -176,23 +176,23 @@
       },
       "post": {
         "tags": [
-          "Client"
+          "Colis"
         ],
         "requestBody": {
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateClientRequest"
+                "$ref": "#/components/schemas/CreateColisRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateClientRequest"
+                "$ref": "#/components/schemas/CreateColisRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/CreateClientRequest"
+                "$ref": "#/components/schemas/CreateColisRequest"
               }
             }
           }
@@ -204,10 +204,10 @@
         }
       }
     },
-    "/api/Client/{id}": {
+    "/api/Colis/{id}": {
       "get": {
         "tags": [
-          "Client"
+          "Colis"
         ],
         "parameters": [
           {
@@ -228,7 +228,7 @@
       },
       "put": {
         "tags": [
-          "Client"
+          "Colis"
         ],
         "parameters": [
           {
@@ -245,17 +245,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateClientRequest"
+                "$ref": "#/components/schemas/UpdateColisRequest"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateClientRequest"
+                "$ref": "#/components/schemas/UpdateColisRequest"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/UpdateClientRequest"
+                "$ref": "#/components/schemas/UpdateColisRequest"
               }
             }
           }
@@ -268,7 +268,7 @@
       },
       "delete": {
         "tags": [
-          "Client"
+          "Colis"
         ],
         "parameters": [
           {
@@ -288,39 +288,10 @@
         }
       }
     },
-    "/api/Colis": {
-      "post": {
-        "tags": [
-          "Colis"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateColisRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateColisRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateColisRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
+    "/api/Dashboard": {
       "get": {
         "tags": [
-          "Colis"
+          "Dashboard"
         ],
         "responses": {
           "200": {
@@ -517,6 +488,29 @@
         }
       }
     },
+    "/api/Livraison/{id}": {
+      "get": {
+        "tags": [
+          "Livraison"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Livraison/{id}/terminer": {
       "patch": {
         "tags": [
@@ -540,40 +534,22 @@
         }
       }
     },
-    "/api/Livreur": {
-      "get": {
+    "/api/Livraison/{id}/annuler": {
+      "patch": {
         "tags": [
-          "Livreur"
+          "Livraison"
         ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "post": {
-        "tags": [
-          "Livreur"
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateLivreurRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateLivreurRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/CreateLivreurRequest"
-              }
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
             }
           }
-        },
+        ],
         "responses": {
           "200": {
             "description": "OK"
@@ -581,71 +557,10 @@
         }
       }
     },
-    "/api/Livreur/{id}": {
-      "get": {
+    "/api/Livraison/{id}/reprendre": {
+      "patch": {
         "tags": [
-          "Livreur"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "put": {
-        "tags": [
-          "Livreur"
-        ],
-        "parameters": [
-          {
-            "name": "id",
-            "in": "path",
-            "required": true,
-            "schema": {
-              "type": "integer",
-              "format": "int32"
-            }
-          }
-        ],
-        "requestBody": {
-          "content": {
-            "application/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateLivreurRequest"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateLivreurRequest"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/UpdateLivreurRequest"
-              }
-            }
-          }
-        },
-        "responses": {
-          "200": {
-            "description": "OK"
-          }
-        }
-      },
-      "delete": {
-        "tags": [
-          "Livreur"
+          "Livraison"
         ],
         "parameters": [
           {
@@ -865,6 +780,27 @@
       }
     },
     "/api/UsersColis/{id}": {
+      "get": {
+        "tags": [
+          "UsersColis"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
       "put": {
         "tags": [
           "UsersColis"
@@ -969,62 +905,6 @@
   },
   "components": {
     "schemas": {
-      "CreateClientRequest": {
-        "required": [
-          "adresse",
-          "cni",
-          "codeClient",
-          "email",
-          "nom",
-          "prenom",
-          "statut",
-          "telephone"
-        ],
-        "type": "object",
-        "properties": {
-          "codeClient": {
-            "maxLength": 160,
-            "minLength": 1,
-            "type": "string"
-          },
-          "nom": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "prenom": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "cni": {
-            "maxLength": 20,
-            "minLength": 1,
-            "type": "string"
-          },
-          "telephone": {
-            "maxLength": 15,
-            "minLength": 1,
-            "type": "string"
-          },
-          "email": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "adresse": {
-            "maxLength": 150,
-            "minLength": 1,
-            "type": "string"
-          },
-          "statut": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      },
       "CreateColisRequest": {
         "required": [
           "adresseArrivee",
@@ -1096,7 +976,6 @@
       },
       "CreateLivraisonRequest": {
         "required": [
-          "idClient",
           "idColis",
           "idLivreur"
         ],
@@ -1106,81 +985,9 @@
             "type": "integer",
             "format": "int32"
           },
-          "idClient": {
-            "type": "integer",
-            "format": "int32"
-          },
           "idLivreur": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "CreateLivreurRequest": {
-        "required": [
-          "adresse",
-          "carteGris",
-          "cni",
-          "email",
-          "matricule",
-          "nom",
-          "permis",
-          "prenom",
-          "statut",
-          "telephone"
-        ],
-        "type": "object",
-        "properties": {
-          "matricule": {
-            "maxLength": 20,
-            "minLength": 1,
-            "type": "string"
-          },
-          "carteGris": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "permis": {
-            "maxLength": 25,
-            "minLength": 1,
-            "type": "string"
-          },
-          "nom": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "prenom": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "cni": {
-            "maxLength": 20,
-            "minLength": 1,
-            "type": "string"
-          },
-          "telephone": {
-            "maxLength": 15,
-            "minLength": 1,
-            "type": "string"
-          },
-          "email": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "adresse": {
-            "maxLength": 150,
-            "minLength": 1,
-            "type": "string"
-          },
-          "statut": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
           }
         },
         "additionalProperties": false
@@ -1325,61 +1132,30 @@
         },
         "additionalProperties": false
       },
-      "UpdateClientRequest": {
-        "required": [
-          "adresse",
-          "cni",
-          "email",
-          "nom",
-          "prenom",
-          "statut",
-          "telephone"
-        ],
+      "UpdateColisRequest": {
         "type": "object",
         "properties": {
-          "idUsersColis": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "codeClient": {
-            "maxLength": 160,
+          "description": {
             "type": "string",
             "nullable": true
           },
-          "nom": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
+          "poids": {
+            "type": "number",
+            "format": "double",
+            "nullable": true
           },
-          "prenom": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
+          "adresseDepart": {
+            "type": "string",
+            "nullable": true
           },
-          "cni": {
-            "maxLength": 20,
-            "minLength": 1,
-            "type": "string"
+          "adresseArrivee": {
+            "type": "string",
+            "nullable": true
           },
-          "telephone": {
-            "maxLength": 15,
-            "minLength": 1,
-            "type": "string"
-          },
-          "email": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "adresse": {
-            "maxLength": 150,
-            "minLength": 1,
-            "type": "string"
-          },
-          "statut": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
+          "idClient": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
           }
         },
         "additionalProperties": false
@@ -1428,130 +1204,46 @@
         },
         "additionalProperties": false
       },
-      "UpdateLivreurRequest": {
-        "required": [
-          "adresse",
-          "carteGris",
-          "cni",
-          "email",
-          "matricule",
-          "nom",
-          "permis",
-          "prenom",
-          "statut",
-          "telephone"
-        ],
-        "type": "object",
-        "properties": {
-          "idUsersColis": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "matricule": {
-            "maxLength": 20,
-            "minLength": 1,
-            "type": "string"
-          },
-          "carteGris": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "permis": {
-            "maxLength": 25,
-            "minLength": 1,
-            "type": "string"
-          },
-          "nom": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "prenom": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "cni": {
-            "maxLength": 20,
-            "minLength": 1,
-            "type": "string"
-          },
-          "telephone": {
-            "maxLength": 15,
-            "minLength": 1,
-            "type": "string"
-          },
-          "email": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          },
-          "adresse": {
-            "maxLength": 150,
-            "minLength": 1,
-            "type": "string"
-          },
-          "statut": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
-          }
-        },
-        "additionalProperties": false
-      },
       "UpdateRequest": {
-        "required": [
-          "adresse",
-          "cni",
-          "email",
-          "nom",
-          "prenom",
-          "statut",
-          "telephone"
-        ],
         "type": "object",
         "properties": {
-          "idUsersColis": {
-            "type": "integer",
-            "format": "int32"
-          },
           "nom": {
             "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "prenom": {
             "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "cni": {
             "maxLength": 20,
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "telephone": {
             "maxLength": 15,
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "email": {
             "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "adresse": {
             "maxLength": 150,
-            "minLength": 1,
-            "type": "string"
-          },
-          "statut": {
-            "maxLength": 80,
-            "minLength": 1,
-            "type": "string"
+            "type": "string",
+            "nullable": true
           },
           "role": {
+            "maxLength": 80,
+            "type": "string",
+            "nullable": true
+          },
+          "statut": {
+            "maxLength": 80,
             "type": "string",
             "nullable": true
           }

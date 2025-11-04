@@ -34,9 +34,6 @@ namespace WebApIFaod2025.Models.Livraison
         public int IdColis { get; set; }
 
         [Required]
-        public int IdClient { get; set; }
-
-        [Required]
         public int IdLivreur { get; set; }
     }
 }

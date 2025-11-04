@@ -10,46 +10,49 @@ namespace WebApIFaod2025.Services
         Livraison CreateLivraison(CreateLivraisonRequest model);
         IEnumerable<Livraison> GetAll();
         Livraison? TerminerLivraison(int id);
+        Livraison? AnnulerLivraison(int id);
+        Livraison? ReprendreLivraison(int id);
     }
+
     public class LivraisonService : ILivraisonService
     {
         private readonly bdTracking01Context _context;
 
-        public LivraisonService(bdTracking01Context context)
-        {
-            _context = context;
-        }
+        public LivraisonService(bdTracking01Context context) => _context = context;
 
         public Livraison CreateLivraison(CreateLivraisonRequest model)
         {
-            var colis = _context.Colis.Find(model.IdColis)
+            // RÉCUPÈRE LE COLIS + SON CLIENT
+            var colis = _context.Colis
+                .Include(c => c.Client)
+                .FirstOrDefault(c => c.IdColis == model.IdColis)
                 ?? throw new KeyNotFoundException("Colis non trouvé");
 
             if (colis.StatutLivraison != "En attente")
                 throw new AppException("Ce colis est déjà en livraison");
 
-            var client = _context.UsersColis.Find(model.IdClient)
-                ?? throw new KeyNotFoundException("Client non trouvé");
+            // VÉRIFIE LE LIVREUR
+            var livreur = _context.UsersColis.Find(model.IdLivreur);
+            if (livreur == null)
+                throw new KeyNotFoundException("Livreur non trouvé");
 
-            var livreur = _context.UsersColis.Find(model.IdLivreur)
-                ?? throw new KeyNotFoundException("Livreur non trouvé");
+            if (livreur.Role != "Livreur")
+                throw new AppException("L'utilisateur sélectionné n'est pas un Livreur");
 
-            if (client.Role != "Client") throw new AppException("IdClient doit être un Client");
-            if (livreur.Role != "Livreur") throw new AppException("IdLivreur doit être un Livreur");
-
+            // CRÉE LA LIVRAISON
             var livraison = new Livraison
             {
                 IdColis = model.IdColis,
-                IdClient = model.IdClient,
-                IdLivreur = model.IdLivreur,  // LIVREUR ICI
-                Statut = "En cours"
+                IdClient = colis.IdClient,
+                IdLivreur = model.IdLivreur,
+                Statut = "En cours",
+                DateDebut = DateTime.UtcNow
             };
 
             colis.StatutLivraison = "En cours";
 
             _context.Livraisons.Add(livraison);
             _context.SaveChanges();
-
             return livraison;
         }
 
@@ -68,11 +71,62 @@ namespace WebApIFaod2025.Services
                 .Include(l => l.Colis)
                 .FirstOrDefault(l => l.IdLivraison == id);
 
-            if (livraison == null || livraison.Statut == "Terminé") return livraison;
+            if (livraison == null)
+                throw new KeyNotFoundException("Livraison non trouvée");
 
+            if (livraison.Statut == "Terminé")
+                throw new AppException("Cette livraison est déjà terminée");
+
+            // METTRE À JOUR
             livraison.Statut = "Terminé";
             livraison.DateFin = DateTime.UtcNow;
             livraison.Colis.StatutLivraison = "Livré";
+
+            _context.SaveChanges();
+            return livraison;
+        }
+
+        public Livraison? ReprendreLivraison(int id)
+        {
+            var livraison = _context.Livraisons
+                .Include(l => l.Colis)
+                .FirstOrDefault(l => l.IdLivraison == id);
+
+            if (livraison == null)
+                throw new KeyNotFoundException("Livraison non trouvée");
+
+            if (livraison.Statut != "Annulé")
+                throw new AppException("Seules les livraisons annulées peuvent être reprises");
+
+            if (livraison.Colis.StatutLivraison != "En attente")
+                throw new AppException("Le colis n'est plus en attente");
+
+            // REPRENDRE
+            livraison.Statut = "En cours";
+            livraison.Colis.StatutLivraison = "En cours";
+
+            _context.SaveChanges();
+            return livraison;
+        }
+
+        public Livraison? AnnulerLivraison(int id)
+        {
+            var livraison = _context.Livraisons
+                .Include(l => l.Colis)
+                .FirstOrDefault(l => l.IdLivraison == id);
+
+            if (livraison == null)
+                throw new KeyNotFoundException("Livraison non trouvée");
+
+            if (livraison.Statut == "Terminé")
+                throw new AppException("Impossible d'annuler une livraison terminée");
+
+            if (livraison.Statut == "Annulé")
+                throw new AppException("Cette livraison est déjà annulée");
+
+            // ANNULATION
+            livraison.Statut = "Annulé";
+            livraison.Colis.StatutLivraison = "Annulé";
 
             _context.SaveChanges();
             return livraison;

@@ -40,12 +40,11 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
     .AddDefaultTokenProviders();
 builder.Services.AddScoped<IUsersColisService, UsersColisService>();
-builder.Services.AddScoped<IClientService, ClientService>();
-builder.Services.AddScoped<ILivreurService, LivreurService>();
 builder.Services.AddScoped<IColisService, ColisService>();
 builder.Services.AddScoped<IDemandeColisService, DemandeColisService>();
 builder.Services.AddScoped<ISuiviCommandeService, SuiviCommandeService>();
 builder.Services.AddScoped<IListeColisService, ListeColisService>();
+builder.Services.AddScoped<IDashboardService, DashboardService>();
 
 builder.Services.AddScoped<ILivraisonService, LivraisonService>();
 
